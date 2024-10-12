@@ -1,0 +1,86 @@
+<ion-content class="gradient-background">
+  <div>
+    <div name="halfTop" class="colorHalfTop"></div>
+    <div id="boardGame" name="idGameArea" class="game-page">
+      <div class="div-h25">
+        <div class="div-h40"></div>
+        <div class="score-grid">
+          <div style="text-align: left;">
+            <b>User: </b>{{ helperTools.userData?.email }}
+          </div>
+          <div style="text-align: right;">
+            <b>Score: </b>{{ helperTools.userScore?.score }}
+          </div>
+        </div>
+        <div class="level-grid">
+          <ion-item class="selected-bar">
+            <ion-select label="Difficulty" placeholder="Select level" value="easy" [(ngModel)]="level" [disabled]="startGame">
+              <ion-select-option value="easy">Easy</ion-select-option>
+              <ion-select-option value="hard">Hard</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      </div>
+      <table id="table_game">
+        <tr>
+          <td class="td_game">
+            <div id="cell0" (click)="cellClicked(0)" class="fixed">
+              {{ selected[0] }}
+            </div>
+          </td>
+          <td class="td_game">
+            <div id="cell1" (click)="cellClicked(1)" class="fixed">
+              {{ selected[1] }}
+            </div>
+          </td>
+          <td class="td_game">
+            <div id="cell2" (click)="cellClicked(2)" class="fixed">
+              {{ selected[2] }}
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="td_game">
+            <div id="cell3" (click)="cellClicked(3)" class="fixed">
+              {{ selected[3] }}
+            </div>
+          </td>
+          <td class="td_game">
+            <div id="cell4" (click)="cellClicked(4)" class="fixed">
+              {{ selected[4] }}
+            </div>
+          </td>
+          <td class="td_game">
+            <div id="cell5" (click)="cellClicked(5)" class="fixed">
+              {{ selected[5] }}
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="td_game">
+            <div id="cell6" (click)="cellClicked(6)" class="fixed">
+              {{ selected[6] }}
+            </div>
+          </td>
+          <td class="td_game">
+            <div id="cell7" (click)="cellClicked(7)" class="fixed">
+              {{ selected[7] }}
+            </div>
+          </td>
+          <td class="td_game">
+            <div id="cell8" (click)="cellClicked(8)" class="fixed">
+              {{ selected[8] }}
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="div-h20">
+        <div *ngIf="endGame" class="action-bar">
+          <ion-button expand="block" class="btn-half btn-submit" (click)="resetGame()">Restart</ion-button>
+          <ion-button expand="block" class="btn-half btn-cancel" (click)="logoutGame()">Logout</ion-button>
+        </div>
+      </div>
+    </div>
+    <div name="halfBottom" class="colorHalfBottom"></div>
+  </div>
+</ion-content>

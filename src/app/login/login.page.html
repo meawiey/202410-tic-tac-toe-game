@@ -1,0 +1,58 @@
+<ion-content class="gradient-background">
+  <div>
+    <div name="halfTop" class="colorHalfTop"></div>
+    <div id="boardGame" name="idGameArea" class="login-page">
+      <div class="div-h2"></div>
+      <div class="div-h10 header-login">
+        Login
+      </div>
+      <img class="game-logo">
+      <div class="div-h60">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-row">
+            <ion-item class="form-background">
+              <ion-input labelPlacement="floating" value="" formControlName="email">
+                <div slot="label">Email <ion-text color="danger">(Required)</ion-text></div>
+              </ion-input>
+            </ion-item>
+            <div class="error-message">
+              <div
+                *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)"
+                class="alert">
+                <div *ngIf="loginForm.controls['email'].errors?.['required']">
+                  Email is required.
+                </div>
+                <div *ngIf="loginForm.controls['email'].errors?.['email']">
+                  Email is incorrect format.
+                </div>
+              </div>
+            </div>
+            <ion-item class="form-background">
+              <ion-input type="password" labelPlacement="floating" value="" formControlName="password">
+                <div slot="label">Password <ion-text color="danger">(Required)</ion-text></div>
+                <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+              </ion-input>
+            </ion-item>
+            <div class="error-message">
+              <div
+                *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)"
+                class="alert">
+                <div *ngIf="loginForm.controls['password'].errors?.['required']">
+                  Password is required.
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="div-h20">
+          <div class="action-bar">
+            <ion-button expand="block" class="btn-half btn-submit" (click)="onSubmit()">Login</ion-button>
+            <ion-button expand="block" class="btn-half btn-cancel" [routerLink]="['/home']">Cancel</ion-button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div name="halfBottom" class="colorHalfBottom"></div>
+  </div>
+</ion-content>

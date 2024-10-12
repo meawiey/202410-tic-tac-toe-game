@@ -1,0 +1,60 @@
+<ion-content class="gradient-background">
+  <div>
+    <div name="halfTop" class="colorHalfTop"></div>
+    <div id="boardGame" name="idGameArea" class="register-page">
+      <div class="div-h2"></div>
+      <div class="div-h10 header-register">
+        Register
+      </div>
+      <img class="game-logo">
+      <div class="div-h60">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="form-row">
+            <ion-item class="form-background">
+              <ion-input labelPlacement="floating" value="" formControlName="email">
+                <div slot="label">Email <ion-text color="danger">(Required)</ion-text></div>
+              </ion-input>
+            </ion-item>
+            <div class="error-message">
+              <div
+                *ngIf="registerForm.controls['email'].invalid && (registerForm.controls['email'].dirty || registerForm.controls['email'].touched)"
+                class="alert">
+                <div *ngIf="registerForm.controls['email'].errors?.['required']">
+                  Email is required.
+                </div>
+                <div *ngIf="registerForm.controls['email'].errors?.['email']">
+                  Email is incorrect format.
+                </div>
+              </div>
+            </div>
+            <ion-item class="form-background">
+              <ion-input labelPlacement="floating" value="" formControlName="password">
+                <div slot="label">Password <ion-text color="danger">(Required)</ion-text></div>
+              </ion-input>
+            </ion-item>
+            <div class="error-message">
+              <div
+                *ngIf="registerForm.controls['password'].invalid && (registerForm.controls['password'].dirty || registerForm.controls['password'].touched)"
+                class="alert">
+                <div *ngIf="registerForm.controls['password'].errors?.['required']">
+                  Password is required.
+                </div>
+                <div *ngIf="registerForm.controls['password'].errors?.['minlength']">
+                  Password must be at least 6 characters long.
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="div-h20">
+          <div class="action-bar">
+            <ion-button expand="block" class="btn-half btn-submit" (click)="onSubmit()">Register</ion-button>
+            <ion-button expand="block" class="btn-half btn-cancel" [routerLink]="['/home']">Cancel</ion-button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div name="halfBottom" class="colorHalfBottom"></div>
+  </div>
+</ion-content>

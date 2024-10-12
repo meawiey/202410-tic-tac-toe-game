@@ -1,0 +1,317 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+// ==== Scrollbar ====
+
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+    display: none;
+}
+
+// ==== animation ====
+.clickable-button:active {
+    transform: scale(0.8);
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.modal-wrapper {
+    background: transparent !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+// ==== color ====
+/*
+    Navy Blue
+    #05445E
+
+    Blue Grotto
+    #189AB4
+
+    Blue Green
+    #75E6DA
+
+    Baby Blue
+    #D4F1F4
+*/
+
+.gradient-background {
+    --background: linear-gradient(#189AB4, #75E6DA);
+}
+
+.colorHalfTop,
+.colorHalfBottom {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.colorHalfTop {
+    background-color: #189AB4;
+}
+
+.colorHalfBottom {
+    background-color: #75E6DA;
+}
+
+
+// ==== Div height ====
+
+.div-h1-5 {
+    height: 1.5%;
+}
+
+.div-h2 {
+    height: 2%;
+}
+
+.div-h3 {
+    height: 3%;
+}
+
+.div-h3-5 {
+    height: 3.5%;
+}
+
+.div-h4 {
+    height: 4%;
+}
+
+.div-h4-5 {
+    height: 4.5%;
+}
+
+.div-h5 {
+    height: 5%;
+}
+
+.div-h6 {
+    height: 6%;
+}
+
+.div-h6-25 {
+    height: 6.25%;
+}
+
+.div-h8 {
+    height: 8%;
+}
+
+.div-h8-55 {
+    height: 8.55%;
+}
+
+.div-h10 {
+    height: 10%;
+}
+
+.div-h12 {
+    height: 12%;
+}
+
+.div-h13 {
+    height: 13%;
+}
+
+.div-h14 {
+    height: 14%;
+}
+
+.div-h15 {
+    height: 15%;
+}
+
+.div-h16 {
+    height: 16%;
+}
+
+.div-h16-5 {
+    height: 16.5%;
+}
+
+.div-h18 {
+    height: 18%;
+}
+
+.div-h19 {
+    height: 18%;
+}
+
+.div-h20 {
+    height: 20%;
+}
+
+.div-h22 {
+    height: 22%;
+}
+
+.div-h24 {
+    height: 24%;
+}
+
+.div-h25 {
+    height: 25%;
+}
+
+.div-h27 {
+    height: 27%;
+}
+
+.div-h28 {
+    height: 28%;
+}
+
+.div-h30 {
+    height: 30%;
+}
+
+.div-h31 {
+    height: 31%;
+}
+
+.div-h32 {
+    height: 32%;
+}
+
+.div-h35 {
+    height: 35%;
+}
+
+.div-h36 {
+    height: 36%;
+}
+
+.div-h38 {
+    height: 38%;
+}
+
+.div-h40 {
+    height: 40%;
+}
+
+.div-h42 {
+    height: 42%;
+}
+
+.div-h45 {
+    height: 45%;
+}
+
+.div-h48 {
+    height: 48%;
+}
+
+.div-h50 {
+    height: 50%;
+}
+
+.div-h55 {
+    height: 55%;
+}
+
+.div-h58 {
+    height: 58%;
+}
+
+.div-h60 {
+    height: 60.5%;
+}
+
+.div-h62 {
+    height: 62%;
+}
+
+.div-h65 {
+    height: 65%;
+}
+
+.div-h70 {
+    height: 70%;
+}
+
+.div-h75 {
+    height: 75%;
+}
+
+.div-h80 {
+    height: 80%;
+}
+
+.div-h85 {
+    height: 85%;
+}
+
+.div-h100 {
+    height: 100%;
+}
+
+// Div width
+
+.div-w40 {
+    width: 40%;
+}
+
+.div-w80 {
+    width: 80%;
+}
+
+.div-w100 {
+    width: 100%;
+}
+
+// background
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+// z-index
+
+.z-index2 {
+    z-index: 2;
+}
+
+.z-index3 {
+    z-index: 3;
+}
+
+canvas {
+    width: 100%;
+}

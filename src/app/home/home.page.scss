@@ -1,0 +1,56 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.main-page {
+  text-align: center;
+  background-color: #05445E;
+}
+
+.game-logo {
+  content: url(../../assets/images/main/logo.png);
+  align-items: center;
+  height: 20%;
+}
+
+.game-logo-header {
+  text-align: center;
+  font-size: 32px;
+}
+
+.btn-full {
+  width: 100%;
+  padding: 2.5% 10%;
+}
+
+.btn-login {
+  --background: #00A8CC;
+}
+
+.btn-register {
+  --background: #0C7B93;
+}

@@ -1,0 +1,81 @@
+#container {
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#container strong {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#container p {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #8c8c8c;
+
+    margin: 0;
+}
+
+#container a {
+    text-decoration: none;
+}
+
+.register-page {
+    text-align: center;
+    background-color: #05445E;
+}
+
+.header-register {
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-row {
+    padding: 0 10%;
+}
+
+.form-background {
+    color: #05445E;
+    --ion-item-background: #D4F1F4;
+}
+
+.error-message {
+    height: 30px;
+    color: #ff3333;
+    font-size: 3vw;
+    text-align: left;
+    padding: 5px 18px;
+}
+
+.action-bar {
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-around;
+}
+
+.btn-half {
+    width: 40%;
+    padding: 2.5% 10%;
+}
+
+.btn-submit {
+    width: 100%;
+    --background: #5cb85c;
+}
+
+.btn-cancel {
+    width: 100%;
+    --background: #FF7F7F;
+}
+
+@media screen and (min-width: 650px) {
+    .error-message {
+        font-size: 18px;
+    }
+}

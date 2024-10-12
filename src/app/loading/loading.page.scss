@@ -1,0 +1,62 @@
+/*
+    Navy Blue
+    #05445E
+
+    Blue Grotto
+    #189AB4
+
+    Blue Green
+    #75E6DA
+
+    Baby Blue
+    #D4F1F4
+*/
+
+.gradient-background {
+    --background: linear-gradient(#189AB4, #75E6DA);
+}
+
+.colorHalfTop,
+.colorHalfBottom {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.colorHalfTop {
+    // background-color: #b9f589;
+    background-color: #189AB4;
+}
+
+.colorHalfBottom {
+    background-color: #75E6DA;
+}
+
+// ==== Loading page ====
+
+.loading-bar {
+    background-image: url(../../assets/images/loading/loading-bar.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 11%;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.loading-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 5px;
+    padding: 4%;
+}
+
+.loading-icon {
+    content: url(../../assets/images/loading/icon-loading.png);
+    align-self: baseline;
+    height: 100%;
+    width: 100%;
+}
+
+.loading-page {
+    background: linear-gradient(#378CE7, #67C6E3);
+}

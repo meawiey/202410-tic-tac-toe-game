@@ -1,0 +1,7 @@
+{
+  "name": "Game-center",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,108 @@
+#container {
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#container strong {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#container p {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #8c8c8c;
+
+    margin: 0;
+}
+
+#container a {
+    text-decoration: none;
+}
+
+.game-page {
+    text-align: center;
+    background-color: #05445E;
+}
+
+.score-grid {
+    display: grid;
+    grid-template-columns: 68% 28%;
+    grid-gap: 5px;
+    padding: 4% 10%;
+}
+
+.level-grid {
+    padding: 0 10%;
+    text-align: -webkit-center;
+}
+
+.selected-bar {
+    --background: transparent;
+    width: 70%;
+}
+
+#table_game {
+    position: relative;
+    font-size: 120px;
+    margin: 1% auto;
+    border-collapse: collapse;
+}
+
+.td_game {
+    border: 4px solid rgb(230, 230, 230);
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.fixed {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.td_list {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.th_list {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.action-bar {
+    display: flex;
+    padding: 5% 10%;
+    justify-content: space-around;
+}
+
+.btn-half {
+    width: 40%;
+    padding: 2.5% 10%;
+}
+
+.btn-submit {
+    width: 100%;
+    --background: #5cb85c;
+}
+
+.btn-cancel {
+    width: 100%;
+    --background: #FF7F7F;
+}
