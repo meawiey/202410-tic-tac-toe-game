@@ -36,6 +36,7 @@
     grid-template-columns: 68% 28%;
     grid-gap: 5px;
     padding: 4% 10%;
+    color: #D4F1F4;
 }
 
 .level-grid {
@@ -46,6 +47,7 @@
 .selected-bar {
     --background: transparent;
     width: 70%;
+    color: #D4F1F4;
 }
 
 #table_game {
@@ -56,7 +58,7 @@
 }
 
 .td_game {
-    border: 4px solid rgb(230, 230, 230);
+    border: 4px solid rgb(212, 241, 244);
     width: 90px;
     height: 90px;
     padding: 0;
@@ -88,7 +90,7 @@
 
 .action-bar {
     display: flex;
-    padding: 5% 10%;
+    padding: 0 10%;
     justify-content: space-around;
 }
 
